@@ -71,7 +71,7 @@ class ReceipeModel : ObservableObject {
             let fetchRequest: NSFetchRequest<RecipeCoreData> = RecipeCoreData.fetchRequest()
             do {
                 favorites = Set(try viewContext.fetch(fetchRequest))
-                print(favorites)
+//                print(favorites)
             } catch {
                 // Handle the error, e.g., show an alert
             }
